@@ -1,0 +1,42 @@
+{
+  "name": "sails-hook-responsetime",
+  "version": "1.0.0",
+  "description": "Sails Hook Response Time. Adds X-Response-Time to HTTP and Socket headers",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha test/sails-hook-responsetime.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luislobo/sails-hook-responsetime.git"
+  },
+  "dependencies": {
+    "debug": "~2.2.0",
+    "lodash": "~3.10.1"
+  },
+  "keywords": [
+    "sails",
+    "hook",
+    "response",
+    "time",
+    "responsetime",
+    "response-time",
+    "x-response-time"
+  ],
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "sails": "~0.11.0",
+    "sails-hook-sockets": "^0.11.13",
+    "sails.io.js": "^0.11.0"
+  },
+  "author": "Luis Lobo Borobia <luislobo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luislobo/sails-hook-responsetime/issues"
+  },
+  "homepage": "https://github.com/luislobo/sails-hook-responsetime#readme",
+  "sails": {
+    "isHook": true,
+    "hookName": "responsetime"
+  }
+}
