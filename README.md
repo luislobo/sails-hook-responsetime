@@ -1,5 +1,13 @@
 # responsetime
 
+---
+
+[![npm version](https://badge.fury.io/js/sails-hook-responsetime.svg)](https://badge.fury.io/js/sails-hook-responsetime)
+[![Dependencies](https://david-dm.org/luislobo/sails-hook-responsetime.svg)](https://david-dm.org/luislobo/sails-hook-responsetime)
+[![Build Status](https://travis-ci.org/luislobo/sails-hook-responsetime.svg?branch=master)](https://travis-ci.org/luislobo/sails-hook-responsetime)
+
+---
+
 `responsetime` hook for Sails v0.11 and up.
 
 Adds X-Response-Time to both HTTP and Socket headers requests.
