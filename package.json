@@ -4,7 +4,7 @@
   "description": "Sails Hook Response Time. Adds X-Response-Time to HTTP and Socket headers",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha test/sails-hook-responsetime.spec.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
