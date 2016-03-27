@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "debug": "~2.2.0",
-    "lodash": "~3.10.1"
+    "lodash": "~3.10.1",
+    "on-headers": "^1.0.1"
   },
   "keywords": [
     "sails",
