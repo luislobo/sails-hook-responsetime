@@ -12,9 +12,7 @@
   },
   "dependencies": {
     "debug": "~2.2.0",
-    "lodash": "~3.10.1",
-    "on-headers": "^1.0.1",
-    "socket.io-client": "^1.4.5"
+    "on-headers": "~1.0.1"
   },
   "keywords": [
     "sails",
@@ -26,10 +24,11 @@
     "x-response-time"
   ],
   "devDependencies": {
-    "mocha": "^2.2.4",
+    "mocha": "~2.2.4",
     "sails": "~0.11.0",
-    "sails-hook-sockets": "^0.11.13",
-    "sails.io.js": "^0.11.0"
+    "sails-hook-sockets": "~0.11.13",
+    "sails.io.js": "~0.11.1",
+    "socket.io-client": "~1.2.1"
   },
   "author": "Luis Lobo Borobia <luislobo@gmail.com>",
   "license": "MIT",
