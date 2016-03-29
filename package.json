@@ -4,7 +4,8 @@
   "description": "Sails Hook Response Time. Adds X-Response-Time to HTTP and Socket headers",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "node ./node_modules/mocha/bin/mocha",
+    "cover": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "x-response-time"
   ],
   "devDependencies": {
+    "istanbul": "^0.4.2",
     "mocha": "~2.2.4",
     "sails": "~0.11.0",
     "sails-hook-sockets": "~0.11.13",
