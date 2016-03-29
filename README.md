@@ -22,7 +22,7 @@ $ npm install sails-hook-responsetime --save
 
 ## Configuration options available
 
-To configure this hook, you can create a file named 'config/responsetime.js'
+To configure this hook, you can create a file named `config/responsetime.js`
 with the following options:
 
 ```javascript
@@ -36,7 +36,40 @@ module.exports.responsetime = {
 Those are the hook defaults, if you don't create the mentioned config file.
 
 For each request, both regular HTTP or socket ones, it will return a header with
-the resopnse time.
+the response time.
+
+If you want to add more precision to the requests reported, you should add this
+configuration to your `config/http.js` file:
+
+```javascript
+module.exports.http = {
+
+  middleware: {
+    order: [
+      '_startRequestTime', // <<< this should be added FIRST
+      'cookieParser',
+      'session',
+      'myRequestLogger',
+      'bodyParser',
+      'handleBodyParserError',
+      'compress',
+      'methodOverride',
+      '$custom',
+      'router',
+      'www',
+      'favicon',
+      '404',
+      '500'
+    ],
+    // this function needs to be added, too
+    _startRequestTime: function(req, res, next) {
+      req._startRequestTime = process.hrtime();
+      next();
+    }
+```
+
+This configuration makes the Express middleware to start recording the start
+time right after it starts resolving the request.
 
 ## License
 
