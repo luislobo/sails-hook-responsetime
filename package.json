@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-responsetime",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Sails Hook Response Time. Adds X-Response-Time to HTTP and Socket headers",
   "main": "index.js",
   "scripts": {
